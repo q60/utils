@@ -1,18 +1,32 @@
-# Utils
+# utils
 
-To start your Phoenix server:
+my website with collection of handy utils written in Elixir using Phoenix Framework.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+### home page
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+![home page](https://i.imgur.com/C1EAuTZ.jpg)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+### todo list
 
-## Learn more
+![todo list](https://imgur.com/QxxAjhY)
+![todo list changing task](https://imgur.com/hjt3VSU)
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+### pie chart
+
+![pie chart](https://imgur.com/OWtJ5v2)
+![pie chart slice value](https://imgur.com/Flwng6P)
+
+### url shortener
+
+![url shortener](https://imgur.com/3OtewPh)
+![shortened url](https://imgur.com/crMNJ0V)
+
+### code bin
+
+![code bin](https://imgur.com/4xKDpBj)
+
+code:
+![code bin highlighted code](https://imgur.com/24mixWP)
+
+raw text:
+![code bin raw text](https://imgur.com/A7IoyLm)
