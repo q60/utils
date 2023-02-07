@@ -12,6 +12,51 @@
     </script>
   </head>
   <body class="bg-white antialiased">
+    <header class="px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between border-b border-zinc-100 py-3">
+        <div class="flex items-center gap-4">
+          <a href="/" class="text-5xl font-['Gilbert_Color']">
+            <%= assigns[:page_title] %>
+          </a>
+          <%= if assigns[:scramble] do %>
+          <svg
+            version="1.1"
+            width="58"
+            height="58"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mr-2 rounded-sm bg-purple-100 absolute right-[5%]"
+            >
+            <rect width="15" height="15" x="4" y="4" fill={@scramble.a} />
+            <rect width="15" height="15" x="21.5" y="4" fill={@scramble.ae} />
+            <rect width="15" height="15" x="39" y="4" fill={@scramble.b} />
+            <rect width="15" height="15" x="4" y="21.5" fill={@scramble.de} />
+            <rect
+              width="15"
+              height="15"
+              x="21.5"
+              y="21.5"
+              fill={@scramble[Enum.random([:uc, :lc, :fc, :rc, :bc, :dc])]}
+              />
+            <rect width="15" height="15" x="39" y="21.5" fill={@scramble.be} />
+            <rect width="15" height="15" x="4" y="39" fill={@scramble.d} />
+            <rect width="15" height="15" x="21.5" y="39" fill={@scramble.ce} />
+            <rect width="15" height="15" x="39" y="39" fill={@scramble.c} />
+          </svg>
+          <% end %>
+        </div>
+      </div>
+    </header>
+    <%= if assigns[:scramble] do %>
+      <div class="mx-4 my-4 px-2 py absolute text-sm font-['IBM_Plex_Mono'] grid grid-rows-2 justify-items-start">
+        <%= if @current_user do %>
+          <.link href={~p"/users/settings"}><%= @current_user.email %></.link>
+          <.link href={~p"/users/log_out"} method="delete">log out</.link>
+        <% else %>
+          <.link href={~p"/users/register"}>register</.link>
+          <.link href={~p"/users/log_in"}>log in</.link>
+        <% end %>
+      </div>
+    <% end %>
     <%= @inner_content %>
   </body>
 </html>

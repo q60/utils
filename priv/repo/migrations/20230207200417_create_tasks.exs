@@ -3,8 +3,9 @@ defmodule Utils.Repo.Migrations.CreateTasks do
 
   def change do
     create table(:tasks) do
+      add :user, :string
       add :description, :string
-      add :completed, :boolean, default: false
+      add :completed, :boolean, default: false, null: false
 
       timestamps()
     end

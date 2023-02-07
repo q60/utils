@@ -16,7 +16,7 @@ defmodule UtilsWeb.UtilsLive.CodeBin do
        socket,
        Keyword.merge(
          [
-           page: "code bin",
+           page_title: "code bin",
            languages: Helpers.language_aliases(),
            changeset: changeset,
            scramble: Cube.scramble()

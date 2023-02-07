@@ -1,4 +1,4 @@
-defmodule UtilsWeb.UtilsLive.ToDo do
+defmodule UtilsWeb.UtilsLive.Todo do
   use UtilsWeb, :live_view
 
   alias Utils.Tasks
@@ -44,8 +44,13 @@ defmodule UtilsWeb.UtilsLive.ToDo do
     """
   end
 
+  defp current_user(socket) do
+    socket.assigns.current_user.email |> Base.encode64()
+  end
+
   def mount_default(socket, reply, params \\ []) do
-    tasks = Tasks.list()
+    user = current_user(socket)
+    tasks = Tasks.list(user)
     changeset = Task.changeset(%Task{}, %{})
 
     {reply,
@@ -53,7 +58,7 @@ defmodule UtilsWeb.UtilsLive.ToDo do
        socket,
        Keyword.merge(
          [
-           page: "todo list",
+           page_title: "todo list",
            tasks: tasks,
            changeset: changeset,
            scramble: Cube.scramble(),
@@ -70,13 +75,13 @@ defmodule UtilsWeb.UtilsLive.ToDo do
 
   def handle_event("delete", %{"id" => id}, socket) do
     {id, _} = Integer.parse(id)
-    Tasks.delete(id)
+    Tasks.delete(id, current_user(socket))
     mount_default(socket, :noreply)
   end
 
   def handle_event("done", %{"id" => id}, socket) do
     {id, _} = Integer.parse(id)
-    Tasks.make_completed(id)
+    Tasks.make_completed(id, current_user(socket))
     mount_default(socket, :noreply)
   end
 
@@ -91,12 +96,12 @@ defmodule UtilsWeb.UtilsLive.ToDo do
 
   def handle_event("save", %{"task" => %{"id" => id, "description" => description}}, socket) do
     {id, _} = Integer.parse(id)
-    Tasks.change(id, description)
+    Tasks.change(id, current_user(socket), description)
     mount_default(socket, :noreply, edit_id: 0)
   end
 
   def handle_event("add", %{"task" => %{"description" => description}}, socket) do
-    Tasks.create(%{description: description, completed: false})
+    Tasks.create(%{user: current_user(socket), description: description, completed: false})
     mount_default(socket, :noreply)
   end
 end

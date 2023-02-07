@@ -3,8 +3,9 @@ defmodule Utils.Tasks.Task do
   import Ecto.Changeset
 
   schema "tasks" do
-    field :completed, :boolean, default: false
+    field :user, :string
     field :description, :string
+    field :completed, :boolean, default: false
 
     timestamps()
   end
@@ -12,6 +13,6 @@ defmodule Utils.Tasks.Task do
   @doc false
   def changeset(task, attrs) do
     task
-    |> cast(attrs, [:description, :completed])
+    |> cast(attrs, [:user, :description, :completed])
   end
 end

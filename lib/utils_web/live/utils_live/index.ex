@@ -9,7 +9,7 @@ defmodule UtilsWeb.UtilsLive.Index do
      assign(
        socket,
        Keyword.merge(
-         [page: "home", scramble: Cube.scramble()],
+         [page_title: "home", scramble: Cube.scramble()],
          params
        )
      )}

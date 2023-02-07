@@ -14,7 +14,7 @@ defmodule UtilsWeb.UtilsLive.Shortener do
      assign(
        socket,
        Keyword.merge(
-         [page: "url shortener", changeset: changeset, scramble: Cube.scramble()],
+         [page_title: "url shortener", changeset: changeset, scramble: Cube.scramble()],
          params
        )
      )}

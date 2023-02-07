@@ -173,7 +173,7 @@ defmodule UtilsWeb.UtilsLive.PieChart do
      assign(
        socket,
        Keyword.merge(
-         [page: "pie chart", scramble: Cube.scramble()],
+         [page_title: "pie chart", scramble: Cube.scramble()],
          params
        )
      )}
