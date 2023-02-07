@@ -1,0 +1,42 @@
+<div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
+  <h1>tasks</h1>
+</div>
+
+<div>
+  <%= for {task, i} <- Enum.zip(@tasks, 1..length(@tasks)) do %>
+    <h3 class={"text-xl font-['Iosevka_Term_Slab'] my-1 #{rem(i, 2) == 0 && "bg-purple-100" || "bg-purple-50"} py-1 pl-2"}>
+      <span phx-click="delete" phx-value-id={task.id} class="hover:underline cursor-pointer">
+        [&times;]
+      </span>
+      <%= if task.completed do %>
+        <span class="font-['Iosevka'] text-emerald-600">[done]</span>
+      <% else %>
+        <span
+          phx-click="done"
+          phx-value-id={task.id}
+          class="font-['Iosevka'] hover:underline text-rose-600 cursor-pointer"
+        >
+          [to do]
+        </span>
+      <% end %>
+      <.task_form task={task} changeset={@changeset} edit_id={@edit_id} id={task.id} />
+    </h3>
+  <% end %>
+</div>
+
+<footer class="mt-8">
+  <.form :let={f} for={@changeset} phx-submit="add">
+    <label class="text-2xl font-['Fira_Code_SemiBold']">add new task</label>
+    <.input
+      field={{f, :description}}
+      type="text"
+      class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none"
+    />
+    <.button
+      class="bg-rose-300 hover:bg-rose-400 text-sm font-['Iosevka'] rounded-none mt-4"
+      phx-disable-with="saving..."
+    >
+      add
+    </.button>
+  </.form>
+</footer>

@@ -1,0 +1,23 @@
+<div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
+  <h1>bin</h1>
+</div>
+
+<.form :let={f} for={@changeset} phx-submit="paste">
+  <label class="text-lg font-['Fira_Code']">language:</label>
+  <.input
+    field={{f, :language}}
+    value="None"
+    list="language"
+    class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4 !w-[20%]"
+  />
+  <datalist id="language">
+    <%= for lang <- @languages do %>
+      <option value={lang} />
+    <% end %>
+  </datalist>
+  <label class="text-lg font-['Fira_Code']">text:</label>
+  <.textarea field={{f, :text}} value={@text} placeholder="enter your text" />
+  <.submit_button>
+    upload
+  </.submit_button>
+</.form>

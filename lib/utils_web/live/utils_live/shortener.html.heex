@@ -1,0 +1,16 @@
+<div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
+  <h1>shorten url</h1>
+</div>
+
+<.form :let={f} for={@changeset} phx-submit="shorten">
+  <.input
+    field={{f, :target}}
+    value={@shortened}
+    placeholder="enter URL"
+    type="text"
+    class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
+  />
+  <.submit_button disable_with="shortening...">
+    shorten
+  </.submit_button>
+</.form>
