@@ -8,25 +8,25 @@ my website with collection of handy utils written in Elixir using Phoenix Framew
 
 ### todo list
 
-![todo list](https://imgur.com/QxxAjhY)
-![todo list changing task](https://imgur.com/hjt3VSU)
+![todo list](https://i.imgur.com/QxxAjhY.jpg)
+![todo list changing task](https://i.imgur.com/hjt3VSU.jpg)
 
 ### pie chart
 
-![pie chart](https://imgur.com/OWtJ5v2)
-![pie chart slice value](https://imgur.com/Flwng6P)
+![pie chart](https://i.imgur.com/OWtJ5v2.jpg)
+![pie chart slice value](https://i.imgur.com/Flwng6P.jpg)
 
 ### url shortener
 
-![url shortener](https://imgur.com/3OtewPh)
-![shortened url](https://imgur.com/crMNJ0V)
+![url shortener](https://i.imgur.com/3OtewPh.jpg)
+![shortened url](https://i.imgur.com/crMNJ0V.jpg)
 
 ### code bin
 
-![code bin](https://imgur.com/4xKDpBj)
+![code bin](https://i.imgur.com/4xKDpBj.jpg)
 
 code:
-![code bin highlighted code](https://imgur.com/24mixWP)
+![code bin highlighted code](https://i.imgur.com/24mixWP.jpg)
 
 raw text:
-![code bin raw text](https://imgur.com/A7IoyLm)
+![code bin raw text](https://i.imgur.com/A7IoyLm.jpg)
