@@ -24,9 +24,9 @@ defmodule UtilsWeb.UtilsLive.Todo do
         <.input field={{f, :edit_id}} value={@edit_id} class="hidden" />
         <.button
           class="bg-rose-300 hover:bg-rose-400 text-sm font-['Iosevka'] rounded-none my-2 mx-2"
-          phx-disable-with="saving..."
+          phx-disable-with={gettext("saving...")}
         >
-          change
+          <%= gettext("change") %>
         </.button>
       </.form>
     <% else %>

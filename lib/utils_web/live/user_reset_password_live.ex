@@ -7,7 +7,7 @@ defmodule UtilsWeb.UserResetPasswordLive do
   def render(assigns) do
     ~H"""
     <div class="mx-auto max-w-sm">
-      <.header class="text-center">Reset Password</.header>
+      <.header class="text-center"><%= gettext("reset password") %></.header>
 
       <.simple_form
         :let={f}
@@ -17,18 +17,20 @@ defmodule UtilsWeb.UserResetPasswordLive do
         phx-change="validate"
       >
         <.error :if={@changeset.action == :insert}>
-          Oops, something went wrong! Please check the errors below.
+          <%= gettext("something went wrong! please check the errors below.") %>
         </.error>
 
-        <.input field={{f, :password}} type="password" label="New password" required />
+        <.input field={{f, :password}} type="password" label={gettext("new password")} required />
         <.input
           field={{f, :password_confirmation}}
           type="password"
-          label="Confirm new password"
+          label={gettext("confirm new password")}
           required
         />
         <:actions>
-          <.button phx-disable-with="Resetting..." class="w-full">Reset Password</.button>
+          <.button phx-disable-with={gettext("resetting...")} class="w-full">
+            <%= gettext("reset password") %>
+          </.button>
         </:actions>
       </.simple_form>
 
@@ -77,7 +79,7 @@ defmodule UtilsWeb.UserResetPasswordLive do
       {:ok, _} ->
         mount_default(
           socket
-          |> put_flash(:info, "Password reset successfully.")
+          |> put_flash(:info, gettext("password reset successfully."))
           |> redirect(to: ~p"/users/log_in"),
           :noreply
         )
@@ -97,7 +99,7 @@ defmodule UtilsWeb.UserResetPasswordLive do
       assign(socket, user: user, token: token)
     else
       socket
-      |> put_flash(:error, "Reset password link is invalid or it has expired.")
+      |> put_flash(:error, gettext("reset password link is invalid or it has expired."))
       |> redirect(to: ~p"/")
     end
   end

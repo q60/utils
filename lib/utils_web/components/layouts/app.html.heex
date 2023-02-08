@@ -1,3 +1,13 @@
+<%
+  lang =
+    if user = assigns[:current_user] do
+      Utils.Settings.get(Base.encode64(user.email), :language)
+    else
+      "en"
+    end
+
+  Gettext.put_locale(UtilsWeb.Gettext, lang)
+  %>
 <main class="px-4 py-20 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-2xl">
     <.flash kind={:info} title="Success!" flash={@flash} />

@@ -2,11 +2,42 @@ defmodule UtilsWeb.UserSettingsLive do
   use UtilsWeb, :live_view
 
   alias Utils.Accounts
+  alias Utils.Settings
+  alias Utils.Settings.Setting
   alias Helpers.Cube
+
+  import UtilsWeb.CustomComponents, only: [submit_button: 1]
 
   def render(assigns) do
     ~H"""
-    <.header>Change Email</.header>
+    <div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
+      <h1><%= gettext("general") %></h1>
+    </div>
+
+    <.simple_form :let={f} for={@settings_changeset} phx-submit="update_settings">
+      <label class="text-lg font-['Fira_Code']"><%= gettext("language") %></label>
+      <.input
+        field={{f, :language}}
+        value={Gettext.get_locale(UtilsWeb.Gettext)}
+        list="language"
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4 !w-[20%]"
+      />
+      <datalist id="language">
+        <%= for lang <- Gettext.known_locales(UtilsWeb.Gettext) do %>
+          <option value={lang} />
+        <% end %>
+      </datalist>
+
+      <:actions>
+        <.submit_button disable_with={gettext("changing...")}>
+          <%= gettext("change settings") %>
+        </.submit_button>
+      </:actions>
+    </.simple_form>
+
+    <div class="text-4xl font-['Fira_Code_SemiBold'] my-8">
+      <h1><%= gettext("change email") %></h1>
+    </div>
 
     <.simple_form
       :let={f}
@@ -16,26 +47,38 @@ defmodule UtilsWeb.UserSettingsLive do
       phx-change="validate_email"
     >
       <.error :if={@email_changeset.action == :insert}>
-        Oops, something went wrong! Please check the errors below.
+        <%= gettext("something went wrong! please check the errors below.") %>
       </.error>
 
-      <.input field={{f, :email}} type="email" label="Email" required />
+      <label class="text-lg font-['Fira_Code']"><%= gettext("email") %></label>
+      <.input
+        field={{f, :email}}
+        type="email"
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
+        required
+      />
 
+      <label class="text-lg font-['Fira_Code']"><%= gettext("current password") %></label>
       <.input
         field={{f, :current_password}}
         name="current_password"
         id="current_password_for_email"
         type="password"
-        label="Current password"
         value={@email_form_current_password}
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
         required
       />
+
       <:actions>
-        <.button phx-disable-with="Changing...">Change Email</.button>
+        <.submit_button disable_with={gettext("changing...")}>
+          <%= gettext("change email") %>
+        </.submit_button>
       </:actions>
     </.simple_form>
 
-    <.header>Change Password</.header>
+    <div class="text-4xl font-['Fira_Code_SemiBold'] my-8">
+      <h1><%= gettext("change password") %></h1>
+    </div>
 
     <.simple_form
       :let={f}
@@ -48,36 +91,56 @@ defmodule UtilsWeb.UserSettingsLive do
       phx-trigger-action={@trigger_submit}
     >
       <.error :if={@password_changeset.action == :insert}>
-        Oops, something went wrong! Please check the errors below.
+        <%= gettext("something went wrong! please check the errors below.") %>
       </.error>
 
       <.input field={{f, :email}} type="hidden" value={@current_email} />
 
-      <.input field={{f, :password}} type="password" label="New password" required />
-      <.input field={{f, :password_confirmation}} type="password" label="Confirm new password" />
+      <label class="text-lg font-['Fira_Code']"><%= gettext("new password") %></label>
+      <.input
+        field={{f, :password}}
+        type="password"
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
+        required
+      />
+
+      <label class="text-lg font-['Fira_Code']"><%= gettext("confirm new password") %></label>
+      <.input
+        field={{f, :password_confirmation}}
+        type="password"
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
+      />
+
+      <label class="text-lg font-['Fira_Code']"><%= gettext("current password") %></label>
       <.input
         field={{f, :current_password}}
         name="current_password"
         type="password"
-        label="Current password"
         id="current_password_for_password"
         value={@current_password}
+        class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
         required
       />
+
       <:actions>
-        <.button phx-disable-with="Changing...">Change Password</.button>
+        <.submit_button disable_with={gettext("changing...")}>
+          <%= gettext("change password") %>
+        </.submit_button>
       </:actions>
     </.simple_form>
     """
   end
 
   def mount_default(socket, reply, params \\ []) do
+    changeset = Setting.changeset(%Setting{}, %{})
+
     {reply,
      assign(
        socket,
        Keyword.merge(
          [
            page_title: "settings",
+           settings_changeset: changeset,
            scramble: Cube.scramble()
          ],
          params
@@ -89,10 +152,10 @@ defmodule UtilsWeb.UserSettingsLive do
     socket =
       case Accounts.update_user_email(socket.assigns.current_user, token) do
         :ok ->
-          put_flash(socket, :info, "Email changed successfully.")
+          put_flash(socket, :info, gettext("email changed successfully."))
 
         :error ->
-          put_flash(socket, :error, "Email change link is invalid or it has expired.")
+          put_flash(socket, :error, gettext("email change link is invalid or it has expired."))
       end
 
     mount_default(push_navigate(socket, to: ~p"/users/settings"), :ok)
@@ -138,7 +201,7 @@ defmodule UtilsWeb.UserSettingsLive do
           &url(~p"/users/settings/confirm_email/#{&1}")
         )
 
-        info = "A link to confirm your email change has been sent to the new address."
+        info = gettext("a link to confirm your email change has been sent to the new address.")
         mount_default(put_flash(socket, :info, info), :noreply)
 
       {:error, changeset} ->
@@ -147,6 +210,13 @@ defmodule UtilsWeb.UserSettingsLive do
           :noreply
         )
     end
+  end
+
+  def handle_event("update_settings", %{"setting" => %{"language" => lang}}, socket) do
+    user = socket.assigns.current_user.email |> Base.encode64()
+
+    Settings.change(user, :language, lang)
+    mount_default(socket, :noreply)
   end
 
   def handle_event("validate_password", params, socket) do

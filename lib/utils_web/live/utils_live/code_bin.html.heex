@@ -1,9 +1,9 @@
 <div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
-  <h1>bin</h1>
+  <h1><%= gettext "bin" %></h1>
 </div>
 
 <.form :let={f} for={@changeset} phx-submit="paste">
-  <label class="text-lg font-['Fira_Code']">language:</label>
+  <label class="text-lg font-['Fira_Code']"><%= gettext "language:" %></label>
   <.input
     field={{f, :language}}
     value="None"
@@ -15,9 +15,9 @@
       <option value={lang} />
     <% end %>
   </datalist>
-  <label class="text-lg font-['Fira_Code']">text:</label>
-  <.textarea field={{f, :text}} value={@text} placeholder="enter your text" />
+  <label class="text-lg font-['Fira_Code']"><%= gettext "text:" %></label>
+  <.textarea field={{f, :text}} value={@text} placeholder={gettext"enter your text"} />
   <.submit_button>
-    upload
+    <%= gettext "upload" %>
   </.submit_button>
 </.form>

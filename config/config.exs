@@ -21,6 +21,11 @@ config :utils, UtilsWeb.Endpoint,
   pubsub_server: Utils.PubSub,
   live_view: [signing_salt: "XQafT+ub"]
 
+# configures gettext
+config :utils, UtilsWeb.Gettext,
+  default_locale: "en",
+  locales: ~w(en ru)
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails

@@ -7,13 +7,13 @@ defmodule UtilsWeb.UserLoginLive do
     ~H"""
     <div class="mx-auto max-w-sm">
       <.header class="text-center">
-        Sign in to account
+        <%= gettext("sign in to account") %>
         <:subtitle>
-          Don't have an account?
+          <%= gettext("don't have an account?") %>
           <.link navigate={~p"/users/register"} class="font-semibold text-brand hover:underline">
-            Sign up
+            Sign up <%= gettext("sign up") %>
           </.link>
-          for an account now.
+          <%= gettext("for an account now.") %>
         </:subtitle>
       </.header>
 
@@ -25,18 +25,18 @@ defmodule UtilsWeb.UserLoginLive do
         as={:user}
         phx-update="ignore"
       >
-        <.input field={{f, :email}} type="email" label="Email" required />
-        <.input field={{f, :password}} type="password" label="Password" required />
+        <.input field={{f, :email}} type="email" label={gettext("email")} required />
+        <.input field={{f, :password}} type="password" label={gettext("password")} required />
 
         <:actions :let={f}>
-          <.input field={{f, :remember_me}} type="checkbox" label="Keep me logged in" />
+          <.input field={{f, :remember_me}} type="checkbox" label={gettext("keep me logged in")} />
           <.link href={~p"/users/reset_password"} class="text-sm font-semibold">
-            Forgot your password?
+            <%= gettext("forgot your password?") %>
           </.link>
         </:actions>
         <:actions>
-          <.button phx-disable-with="Signing in..." class="w-full">
-            Sign in <span aria-hidden="true">→</span>
+          <.button phx-disable-with={gettext("signing in...")} class="w-full">
+            <%= gettext("sign in") %> <span aria-hidden="true">→</span>
           </.button>
         </:actions>
       </.simple_form>

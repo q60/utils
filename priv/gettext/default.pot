@@ -1,0 +1,399 @@
+## This file is a PO Template file.
+##
+## "msgid"s here are often extracted from source code.
+## Add new messages manually only if they're dynamic
+## messages that can't be statically extracted.
+##
+## Run "mix gettext.extract" to bring this file up to
+## date. Leave "msgstr"s empty as changing them here has no
+## effect: edit them in PO (.po) files instead.
+#
+msgid ""
+msgstr ""
+
+#: lib/utils_web/components/core_components.ex:458
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:204
+#, elixir-autogen, elixir-format
+msgid "a link to confirm your email change has been sent to the new address."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:8
+#, elixir-autogen, elixir-format
+msgid "account created successfully!"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:33
+#: lib/utils_web/live/utils_live/todo.html.heex:38
+#, elixir-autogen, elixir-format
+msgid "add"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "add new task"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:14
+#, elixir-autogen, elixir-format
+msgid "already registered?"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:2
+#, elixir-autogen, elixir-format
+msgid "bin"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.ex:29
+#, elixir-autogen, elixir-format
+msgid "change"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:39
+#: lib/utils_web/live/user_settings_live.ex:74
+#, elixir-autogen, elixir-format
+msgid "change email"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:80
+#: lib/utils_web/live/user_settings_live.ex:127
+#, elixir-autogen, elixir-format
+msgid "change password"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:32
+#: lib/utils_web/live/user_settings_live.ex:73
+#: lib/utils_web/live/user_settings_live.ex:126
+#, elixir-autogen, elixir-format
+msgid "changing..."
+msgstr ""
+
+#: lib/utils_web/components/core_components.ex:80
+#: lib/utils_web/components/core_components.ex:169
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:10
+#, elixir-autogen, elixir-format
+msgid "confirm account"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:16
+#, elixir-autogen, elixir-format
+msgid "confirm my account"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:27
+#: lib/utils_web/live/user_settings_live.ex:107
+#, elixir-autogen, elixir-format
+msgid "confirm new password"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:15
+#, elixir-autogen, elixir-format
+msgid "confirming..."
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:42
+#, elixir-autogen, elixir-format
+msgid "create an account"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:41
+#, elixir-autogen, elixir-format
+msgid "creating account..."
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:61
+#: lib/utils_web/live/user_settings_live.ex:114
+#, elixir-autogen, elixir-format
+msgid "current password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:12
+#, elixir-autogen, elixir-format
+msgid "don't have an account?"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "done"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:12
+#: lib/utils_web/live/user_forgot_password_live.ex:16
+#: lib/utils_web/live/user_login_live.ex:28
+#: lib/utils_web/live/user_registration_live.ex:37
+#: lib/utils_web/live/user_settings_live.ex:53
+#, elixir-autogen, elixir-format
+msgid "email"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:158
+#, elixir-autogen, elixir-format
+msgid "email change link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:155
+#, elixir-autogen, elixir-format
+msgid "email changed successfully."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:9
+#, elixir-autogen, elixir-format
+msgid "enter URL"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:16
+#, elixir-autogen, elixir-format
+msgid "enter name"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:23
+#, elixir-autogen, elixir-format
+msgid "enter value"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:19
+#, elixir-autogen, elixir-format
+msgid "enter your text"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:16
+#, elixir-autogen, elixir-format
+msgid "for an account now."
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:11
+#: lib/utils_web/live/user_login_live.ex:34
+#, elixir-autogen, elixir-format
+msgid "forgot your password?"
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:59
+#, elixir-autogen, elixir-format
+msgid "if your email is in our system, you will receive instructions to reset your password shortly."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:31
+#, elixir-autogen, elixir-format
+msgid "invalid email or password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:32
+#, elixir-autogen, elixir-format
+msgid "keep me logged in"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:6
+#, elixir-autogen, elixir-format
+msgid "language:"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:23
+#: lib/utils_web/live/user_forgot_password_live.ex:26
+#, elixir-autogen, elixir-format
+msgid "log in"
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:39
+#, elixir-autogen, elixir-format
+msgid "logged out successfully."
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:23
+#: lib/utils_web/live/user_settings_live.ex:99
+#, elixir-autogen, elixir-format
+msgid "new password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:29
+#: lib/utils_web/live/user_registration_live.ex:38
+#, elixir-autogen, elixir-format
+msgid "password"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:82
+#, elixir-autogen, elixir-format
+msgid "password reset successfully."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:14
+#, elixir-autogen, elixir-format
+msgid "password updated successfully!"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:7
+#, elixir-autogen, elixir-format
+msgid "pie chart"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:21
+#: lib/utils_web/live/user_confirmation_live.ex:22
+#: lib/utils_web/live/user_confirmation_live.ex:24
+#: lib/utils_web/live/user_forgot_password_live.ex:24
+#, elixir-autogen, elixir-format
+msgid "register"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:12
+#, elixir-autogen, elixir-format
+msgid "register for an account"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "remove"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:9
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:15
+#, elixir-autogen, elixir-format
+msgid "resend confirmation instructions"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:10
+#: lib/utils_web/live/user_reset_password_live.ex:32
+#, elixir-autogen, elixir-format
+msgid "reset password"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:102
+#, elixir-autogen, elixir-format
+msgid "reset password link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:31
+#, elixir-autogen, elixir-format
+msgid "resetting..."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.ex:27
+#: lib/utils_web/live/utils_live/todo.html.heex:36
+#, elixir-autogen, elixir-format
+msgid "saving..."
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:19
+#, elixir-autogen, elixir-format
+msgid "send password reset instructions"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:14
+#: lib/utils_web/live/user_forgot_password_live.ex:18
+#, elixir-autogen, elixir-format
+msgid "sending..."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:14
+#, elixir-autogen, elixir-format
+msgid "shorten"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:2
+#, elixir-autogen, elixir-format
+msgid "shorten url"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:13
+#, elixir-autogen, elixir-format
+msgid "shortening..."
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:39
+#: lib/utils_web/live/user_registration_live.ex:16
+#, elixir-autogen, elixir-format
+msgid "sign in"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:10
+#, elixir-autogen, elixir-format
+msgid "sign in to account"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:14
+#, elixir-autogen, elixir-format
+msgid "sign up"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:38
+#, elixir-autogen, elixir-format
+msgid "signing in..."
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:34
+#: lib/utils_web/live/user_reset_password_live.ex:20
+#: lib/utils_web/live/user_settings_live.ex:50
+#: lib/utils_web/live/user_settings_live.ex:94
+#, elixir-autogen, elixir-format
+msgid "something went wrong! please check the errors below."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:2
+#, elixir-autogen, elixir-format
+msgid "tasks"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:18
+#, elixir-autogen, elixir-format
+msgid "text:"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:18
+#, elixir-autogen, elixir-format
+msgid "to do"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:18
+#, elixir-autogen, elixir-format
+msgid "to your account now."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:21
+#, elixir-autogen, elixir-format
+msgid "upload"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:74
+#, elixir-autogen, elixir-format
+msgid "user confirmation link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:55
+#, elixir-autogen, elixir-format
+msgid "user confirmed successfully."
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:12
+#, elixir-autogen, elixir-format
+msgid "we'll send a password reset link to your inbox"
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:18
+#, elixir-autogen, elixir-format
+msgid "welcome back!"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:33
+#, elixir-autogen, elixir-format
+msgid "change settings"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:14
+#, elixir-autogen, elixir-format
+msgid "general"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:18
+#, elixir-autogen, elixir-format
+msgid "language"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:55
+#, elixir-autogen, elixir-format
+msgid "if your email is in our system and it has not been confirmed yet, you will receive an email with instructions shortly."
+msgstr ""

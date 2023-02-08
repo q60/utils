@@ -8,22 +8,22 @@ defmodule UtilsWeb.UserForgotPasswordLive do
     ~H"""
     <div class="mx-auto max-w-sm">
       <.header class="text-center">
-        Forgot your password?
-        <:subtitle>We'll send a password reset link to your inbox</:subtitle>
+        <%= gettext("forgot your password?") %>
+        <:subtitle><%= gettext("we'll send a password reset link to your inbox") %></:subtitle>
       </.header>
 
       <.simple_form :let={f} id="reset_password_form" for={:user} phx-submit="send_email">
-        <.input field={{f, :email}} type="email" placeholder="Email" required />
+        <.input field={{f, :email}} type="email" placeholder={gettext("email")} required />
         <:actions>
-          <.button phx-disable-with="Sending..." class="w-full">
-            Send password reset instructions
+          <.button phx-disable-with={gettext("sending...")} class="w-full">
+            <%= gettext("send password reset instructions") %>
           </.button>
         </:actions>
       </.simple_form>
       <p class="text-center mt-4">
-        <.link href={~p"/users/register"}>Register</.link>
+        <.link href={~p"/users/register"}><%= gettext("register") %></.link>
         |
-        <.link href={~p"/users/log_in"}>Log in</.link>
+        <.link href={~p"/users/log_in"}><%= gettext("log in") %></.link>
       </p>
     </div>
     """
@@ -56,7 +56,9 @@ defmodule UtilsWeb.UserForgotPasswordLive do
     end
 
     info =
-      "If your email is in our system, you will receive instructions to reset your password shortly."
+      gettext(
+        "if your email is in our system, you will receive instructions to reset your password shortly."
+      )
 
     mount_default(
       socket

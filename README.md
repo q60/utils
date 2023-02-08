@@ -6,6 +6,10 @@ my website with collection of handy utils written in Elixir using Phoenix Framew
 
 ![home page](https://i.imgur.com/C1EAuTZ.jpg)
 
+### settings
+
+![settings](https://i.imgur.com/NzM6WAZ.jpg)
+
 ### todo list
 
 ![todo list](https://i.imgur.com/QxxAjhY.jpg)

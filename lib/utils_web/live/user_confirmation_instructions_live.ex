@@ -6,19 +6,21 @@ defmodule UtilsWeb.UserConfirmationInstructionsLive do
 
   def render(assigns) do
     ~H"""
-    <.header>Resend confirmation instructions</.header>
+    <.header><%= gettext("resend confirmation instructions") %></.header>
 
     <.simple_form :let={f} for={:user} id="resend_confirmation_form" phx-submit="send_instructions">
-      <.input field={{f, :email}} type="email" label="Email" required />
+      <.input field={{f, :email}} type="email" label={gettext("email")} required />
       <:actions>
-        <.button phx-disable-with="Sending...">Resend confirmation instructions</.button>
+        <.button phx-disable-with={gettext("sending...")}>
+          <%= gettext("resend confirmation instructions") %>
+        </.button>
       </:actions>
     </.simple_form>
 
     <p>
-      <.link href={~p"/users/register"}>Register</.link>
+      <.link href={~p"/users/register"}><%= gettext("register") %></.link>
       |
-      <.link href={~p"/users/log_in"}>Log in</.link>
+      <.link href={~p"/users/log_in"}><%= gettext("log in") %></.link>
     </p>
     """
   end
@@ -50,7 +52,9 @@ defmodule UtilsWeb.UserConfirmationInstructionsLive do
     end
 
     info =
-      "If your email is in our system and it has not been confirmed yet, you will receive an email with instructions shortly."
+      gettext(
+        "if your email is in our system and it has not been confirmed yet, you will receive an email with instructions shortly."
+      )
 
     mount_default(
       socket

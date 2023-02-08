@@ -7,19 +7,21 @@ defmodule UtilsWeb.UserConfirmationLive do
   def render(%{live_action: :edit} = assigns) do
     ~H"""
     <div class="mx-auto max-w-sm">
-      <.header class="text-center">Confirm Account</.header>
+      <.header class="text-center"><%= gettext("confirm account") %></.header>
 
       <.simple_form :let={f} for={:user} id="confirmation_form" phx-submit="confirm_account">
         <.input field={{f, :token}} type="hidden" value={@token} />
         <:actions>
-          <.button phx-disable-with="Confirming..." class="w-full">Confirm my account</.button>
+          <.button phx-disable-with={gettext("confirming...")} class="w-full">
+            <%= gettext("confirm my account") %>
+          </.button>
         </:actions>
       </.simple_form>
 
       <p class="text-center mt-4">
-        <.link href={~p"/users/register"}>Register</.link>
+        <.link href={~p"/users/register"}><%= gettext("register") %></.link>
         |
-        <.link href={~p"/users/log_in"}>Log in</.link>
+        <.link href={~p"/users/log_in"}><%= gettext("register") %></.link>
       </p>
     </div>
     """
@@ -50,7 +52,7 @@ defmodule UtilsWeb.UserConfirmationLive do
       {:ok, _} ->
         mount_default(
           socket
-          |> put_flash(:info, "User confirmed successfully.")
+          |> put_flash(:info, gettext("user confirmed successfully."))
           |> redirect(to: ~p"/"),
           :noreply
         )
@@ -67,7 +69,10 @@ defmodule UtilsWeb.UserConfirmationLive do
           %{} ->
             mount_default(
               socket
-              |> put_flash(:error, "User confirmation link is invalid or it has expired.")
+              |> put_flash(
+                :error,
+                gettext("user confirmation link is invalid or it has expired.")
+              )
               |> redirect(to: ~p"/"),
               :noreply
             )

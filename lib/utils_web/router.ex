@@ -21,17 +21,16 @@ defmodule UtilsWeb.Router do
     pipe_through [:browser, :require_authenticated_user]
 
     live_session :todo, on_mount: [{UtilsWeb.UserAuth, :ensure_authenticated}] do
+      live "/", UtilsLive.Index, :index
+      live "/pie", UtilsLive.PieChart, :pie_chart
+      live "/short", UtilsLive.Shortener, :shortener
+      live "/bin", UtilsLive.CodeBin, :code_bin
       live "/todo", UtilsLive.Todo, :todo
     end
   end
 
   scope "/", UtilsWeb do
     pipe_through :browser
-
-    live "/", UtilsLive.Index, :index
-    live "/pie", UtilsLive.PieChart, :pie_chart
-    live "/short", UtilsLive.Shortener, :shortener
-    live "/bin", UtilsLive.CodeBin, :code_bin
 
     get "/s/:short", PageController, :shortener_path
     get "/c/:short", PageController, :bin_path

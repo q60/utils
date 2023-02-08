@@ -3,20 +3,24 @@
   currently it's a bit buggy and you can only submit chart slices one by one.
   it also seems to overlay previous data without overwriting it...
   -->
+<div class="text-4xl font-['Fira_Code_SemiBold'] mb-8">
+  <h1><%= gettext "pie chart" %></h1>
+</div>
+
 <.form :let={f} for={:chart} phx-submit="chart">
   <%= for i <- 1..@items_number do %>
     <div class="flex justify-evenly">
       <.input
         field={{f, :text}}
         value={@items[i][:text]}
-        placeholder="enter name"
+        placeholder={gettext "enter name"}
         type="text"
         class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
       />
       <.input
         field={{f, :chance}}
         value={@items[i][:chance]}
-        placeholder="enter value"
+        placeholder={gettext "enter value"}
         type="text"
         class="!text-lg font-['Iosevka_Term_Slab'] bg-purple-50 rounded-none !my-4"
       />
@@ -26,14 +30,14 @@
         phx-click="add-item"
         class="bg-rose-300 hover:bg-rose-400 text-sm font-['Iosevka'] rounded-none my-4"
       >
-        add
+        <%= gettext "add" %>
       </.button>
       <.button
         phx-click="remove-item"
         phx-value-id={i}
         class="bg-rose-300 hover:bg-rose-400 text-sm font-['Iosevka'] rounded-none my-4"
       >
-        remove
+        <%= gettext "remove" %>
       </.button>
     </div>
   <% end %>
