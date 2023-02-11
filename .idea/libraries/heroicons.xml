@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="heroicons" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/heroicons/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/heroicons/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/heroicons/lib" />
+      <root url="file://$PROJECT_DIR$/deps/heroicons/lib" />
+    </SOURCES>
+  </library>
+</component>

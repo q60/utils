@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="finch" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/finch/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/finch/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/deps/finch/lib" />
+    </SOURCES>
+  </library>
+</component>

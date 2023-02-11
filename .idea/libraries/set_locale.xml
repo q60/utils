@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="set_locale" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/set_locale/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/set_locale/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/set_locale/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/set_locale/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/set_locale/lib" />
+      <root url="file://$PROJECT_DIR$/deps/set_locale/lib" />
+    </SOURCES>
+  </library>
+</component>

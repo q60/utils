@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="nimble_pool" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/nimble_pool/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/nimble_pool/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/nimble_pool/lib" />
+      <root url="file://$PROJECT_DIR$/deps/nimble_pool/lib" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="scrambler" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/scrambler/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/scrambler/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/scrambler/lib" />
+      <root url="file://$PROJECT_DIR$/deps/scrambler/lib" />
+    </SOURCES>
+  </library>
+</component>
