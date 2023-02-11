@@ -74,8 +74,8 @@ msgstr "changement en cours..."
 #: lib/utils_web/components/core_components.ex:80
 #: lib/utils_web/components/core_components.ex:169
 #, elixir-autogen, elixir-format
-msgid "fermer"
-msgstr ""
+msgid "close"
+msgstr "fermer"
 
 #: lib/utils_web/live/user_confirmation_live.ex:10
 #, elixir-autogen, elixir-format
