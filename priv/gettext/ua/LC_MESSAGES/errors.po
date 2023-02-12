@@ -19,7 +19,7 @@ msgstr "вже зайнято"
 
 ### idk context
 msgid "is invalid"
-msgstr "" 
+msgstr ""
 
 msgid "must be accepted"
 msgstr "повинно бути підтверджено"
