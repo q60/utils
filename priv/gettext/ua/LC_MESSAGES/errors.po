@@ -12,34 +12,35 @@ msgstr ""
 "Plural-Forms: nplurals=3\n"
 
 msgid "can't be blank"
-msgstr ""
+msgstr "не може бути порожнім"
 
 msgid "has already been taken"
-msgstr ""
+msgstr "вже зайнято"
 
+### idk context
 msgid "is invalid"
 msgstr ""
 
 msgid "must be accepted"
-msgstr ""
+msgstr "повинно бути підтверджено"
 
 msgid "has invalid format"
-msgstr ""
+msgstr "повинно невірний формат"
 
 msgid "has an invalid entry"
-msgstr ""
+msgstr "повинно некоректний запис"
 
 msgid "is reserved"
-msgstr ""
+msgstr "зарезервовано"
 
 msgid "does not match confirmation"
-msgstr ""
+msgstr "не відповідає підтвердженню"
 
 msgid "is still associated with this entry"
-msgstr ""
+msgstr "досі асоціюється з цим записом"
 
 msgid "are still associated with this entry"
-msgstr ""
+msgstr "досі асоціюються з цим записом"
 
 msgid "should have %{count} item(s)"
 msgid_plural "should have %{count} item(s)"
@@ -96,16 +97,16 @@ msgstr[1] ""
 msgstr[2] ""
 
 msgid "must be less than %{number}"
-msgstr ""
+msgstr "повинно бути меншим за %{number}"
 
 msgid "must be greater than %{number}"
-msgstr ""
+msgstr "повинно бути більшим за %{number}."
 
 msgid "must be less than or equal to %{number}"
-msgstr ""
+msgstr "повинно бути менше або дорівнювати %{number}."
 
 msgid "must be greater than or equal to %{number}"
-msgstr ""
+msgstr "повинно бути більше або дорівнювати %{число}."
 
 msgid "must be equal to %{number}"
-msgstr ""
+msgstr "повинно дорівнювати %{число}."
