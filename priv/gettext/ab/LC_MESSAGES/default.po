@@ -1,0 +1,336 @@
+# # "msgid"s in this file come from POT (.pot) files.
+# ##
+# ## Do not add, change, or remove "msgid"s manually here as
+# ## they're tied to the ones in the corresponding POT file
+# ## (with the same domain).
+# ##
+# ## Use "mix gettext.extract --merge" or "mix gettext.merge"
+# ## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: lib/utils_web/components/core_components.ex:458
+msgid "Actions"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:204
+msgid "a link to confirm your email change has been sent to the new address."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:8
+msgid "account created successfully!"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:33
+#: lib/utils_web/live/utils_live/todo.html.heex:38
+msgid "add"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:28
+msgid "add new task"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:14
+msgid "already registered?"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:2
+msgid "bin"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.ex:29
+msgid "change"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:39
+#: lib/utils_web/live/user_settings_live.ex:74
+msgid "change email"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:80
+#: lib/utils_web/live/user_settings_live.ex:127
+msgid "change password"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:32
+#: lib/utils_web/live/user_settings_live.ex:73
+#: lib/utils_web/live/user_settings_live.ex:126
+msgid "changing..."
+msgstr ""
+
+#: lib/utils_web/components/core_components.ex:80
+#: lib/utils_web/components/core_components.ex:169
+msgid "close"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:10
+msgid "confirm account"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:16
+msgid "confirm my account"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:27
+#: lib/utils_web/live/user_settings_live.ex:107
+msgid "confirm new password"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:15
+msgid "confirming..."
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:42
+msgid "create an account"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:41
+msgid "creating account..."
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:61
+#: lib/utils_web/live/user_settings_live.ex:114
+msgid "current password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:12
+msgid "don't have an account?"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:11
+msgid "done"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:12
+#: lib/utils_web/live/user_forgot_password_live.ex:16
+#: lib/utils_web/live/user_login_live.ex:28
+#: lib/utils_web/live/user_registration_live.ex:37
+#: lib/utils_web/live/user_settings_live.ex:53
+msgid "email"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:158
+msgid "email change link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:155
+msgid "email changed successfully."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:9
+msgid "enter URL"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:16
+msgid "enter name"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:23
+msgid "enter value"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:19
+msgid "enter your text"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:16
+msgid "for an account now."
+msgstr "аккаунт абыржәыцҟьа."
+
+#: lib/utils_web/live/user_forgot_password_live.ex:11
+#: lib/utils_web/live/user_login_live.ex:34
+msgid "forgot your password?"
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:59
+msgid "if your email is in our system, you will receive instructions to reset your password shortly."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:31
+msgid "invalid email or password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:32
+msgid "keep me logged in"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:6
+msgid "language:"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:23
+#: lib/utils_web/live/user_forgot_password_live.ex:26
+msgid "log in"
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:39
+msgid "logged out successfully."
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:23
+#: lib/utils_web/live/user_settings_live.ex:99
+msgid "new password"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:29
+#: lib/utils_web/live/user_registration_live.ex:38
+msgid "password"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:82
+msgid "password reset successfully."
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:14
+msgid "password updated successfully!"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:7
+msgid "pie chart"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:21
+#: lib/utils_web/live/user_confirmation_live.ex:22
+#: lib/utils_web/live/user_confirmation_live.ex:24
+#: lib/utils_web/live/user_forgot_password_live.ex:24
+msgid "register"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:12
+msgid "register for an account"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/pie_chart.html.heex:40
+msgid "remove"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:9
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:15
+msgid "resend confirmation instructions"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:10
+#: lib/utils_web/live/user_reset_password_live.ex:32
+msgid "reset password"
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:102
+msgid "reset password link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_reset_password_live.ex:31
+msgid "resetting..."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.ex:27
+#: lib/utils_web/live/utils_live/todo.html.heex:36
+msgid "saving..."
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:19
+msgid "send password reset instructions"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:14
+#: lib/utils_web/live/user_forgot_password_live.ex:18
+msgid "sending..."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:14
+msgid "shorten"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:2
+msgid "shorten url"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/shortener.html.heex:13
+msgid "shortening..."
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:39
+#: lib/utils_web/live/user_registration_live.ex:16
+msgid "sign in"
+msgstr "аҭалара"
+
+#: lib/utils_web/live/user_login_live.ex:10
+msgid "sign in to account"
+msgstr ""
+
+#: lib/utils_web/live/user_login_live.ex:14
+msgid "sign up"
+msgstr "аҭаҩра"
+
+#: lib/utils_web/live/user_login_live.ex:38
+msgid "signing in..."
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:34
+#: lib/utils_web/live/user_reset_password_live.ex:20
+#: lib/utils_web/live/user_settings_live.ex:50
+#: lib/utils_web/live/user_settings_live.ex:94
+msgid "something went wrong! please check the errors below."
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:2
+msgid "tasks"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:18
+msgid "text:"
+msgstr ""
+
+#: lib/utils_web/live/utils_live/todo.html.heex:18
+msgid "to do"
+msgstr ""
+
+#: lib/utils_web/live/user_registration_live.ex:18
+msgid "to your account now."
+msgstr "шәаккаунт абыржәыцәҟьа."
+
+#: lib/utils_web/live/utils_live/code_bin.html.heex:21
+msgid "upload"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:74
+msgid "user confirmation link is invalid or it has expired."
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_live.ex:55
+msgid "user confirmed successfully."
+msgstr ""
+
+#: lib/utils_web/live/user_forgot_password_live.ex:12
+msgid "we'll send a password reset link to your inbox"
+msgstr ""
+
+#: lib/utils_web/controllers/user_session_controller.ex:18
+msgid "welcome back!"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:33
+msgid "change settings"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:14
+msgid "general"
+msgstr ""
+
+#: lib/utils_web/live/user_settings_live.ex:18
+msgid "language"
+msgstr ""
+
+#: lib/utils_web/live/user_confirmation_instructions_live.ex:55
+msgid "if your email is in our system and it has not been confirmed yet, you will receive an email with instructions shortly."
+msgstr ""

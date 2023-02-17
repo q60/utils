@@ -24,7 +24,7 @@ config :utils, UtilsWeb.Endpoint,
 # configures gettext
 config :utils, UtilsWeb.Gettext,
   default_locale: "en",
-  locales: ~w(en fr ru ua)
+  locales: ~w(ab en fr ru ua)
 
 # Configures the mailer
 #
